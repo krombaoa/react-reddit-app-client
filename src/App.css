@@ -1,3 +1,6 @@
+body {
+  background-color: #878a8c;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +38,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.right-panel {
+  position: fixed;
+  width: 255px;
+}
+
+.sort-icon {
+  margin-right: 10px;
+}
+
+.card-container {
+  margin: 10px 0;
+}
+
+.clickable {
+  cursor: pointer;
 }
