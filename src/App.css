@@ -52,3 +52,7 @@ body {
 .card-container {
   margin: 10px 0;
 }
+
+.clickable {
+  cursor: pointer;
+}

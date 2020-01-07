@@ -35,6 +35,16 @@ export interface Story {
     url: string;
     thumbnail: string;
     subreddit_name_prefixed: string;
+    num_comments: number;
+    permalink: string;
   };
   kind: 't3';
+}
+
+export interface Comment {
+  data: {
+    body: string;
+    author: string;
+  };
+  kind: 't1';
 }
