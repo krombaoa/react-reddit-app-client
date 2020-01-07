@@ -10,28 +10,28 @@ const SortList: React.SFC<SortListProps> = (props: SortListProps) => {
   const { sortSelected } = props;
   return (
     <ListGroup>
-      <ListGroupItem onClick={(): void => sortSelected('hot')}>
-        <FaHotjar className={'clickable sort-icon'} />
+      <ListGroupItem onClick={(): void => sortSelected('hot')} className={'clickable'}>
+        <FaHotjar className={'sort-icon'} />
         Hot
       </ListGroupItem>
-      <ListGroupItem onClick={(): void => sortSelected('new')}>
-        <FaList className={'clickable sort-icon'} />
+      <ListGroupItem onClick={(): void => sortSelected('new')} className={'clickable'}>
+        <FaList className={'sort-icon'} />
         New
       </ListGroupItem>
-      <ListGroupItem onClick={(): void => sortSelected('rising')}>
-        <FaChartBar className={'clickable sort-icon'} />
+      <ListGroupItem onClick={(): void => sortSelected('rising')} className={'clickable'}>
+        <FaChartBar className={'sort-icon'} />
         Rising
       </ListGroupItem>
-      <ListGroupItem onClick={(): void => sortSelected('top')}>
-        <FaTrophy className={'clickable sort-icon'} />
+      <ListGroupItem onClick={(): void => sortSelected('top')} className={'clickable'}>
+        <FaTrophy className={'sort-icon'} />
         Top
       </ListGroupItem>
-      <ListGroupItem onClick={(): void => sortSelected('best')}>
-        <FaStar className={'clickable sort-icon'} />
+      <ListGroupItem onClick={(): void => sortSelected('best')} className={'clickable'}>
+        <FaStar className={'sort-icon'} />
         Best
       </ListGroupItem>
-      <ListGroupItem onClick={(): void => sortSelected('controversial')}>
-        <FaNewspaper className={'clickable sort-icon'} />
+      <ListGroupItem onClick={(): void => sortSelected('controversial')} className={'clickable'}>
+        <FaNewspaper className={'sort-icon'} />
         Controversial
       </ListGroupItem>
     </ListGroup>

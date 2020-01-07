@@ -1,7 +1,6 @@
 import React, { useEffect, useReducer } from 'react';
 import { Container, Row, Col, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { FaReddit, FaCaretUp, FaCaretDown, FaCommentAlt, FaShare, FaStar } from 'react-icons/fa';
-import { Facebook } from 'react-content-loader';
 import axios from 'axios';
 import CardComponent from 'components/card';
 import SortList from 'components/sort-list';
@@ -95,7 +94,6 @@ const App: React.FC = () => {
     <div>
       <Container>
         <Row>
-          <Facebook />
           <Col sm="6" md={{ size: 9, offset: 0 }}>
             <h1>{state.sortSelected.toUpperCase()}</h1>
             {state.storyItems.map((item, key) => (
